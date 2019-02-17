@@ -1,0 +1,350 @@
+body { /* mengatur gambar latar belakang*/
+	font: 16px /20px arial, san-serif;
+	background-image: url(tu.jpg)  ;
+	
+	background-attachment: fixed ;
+	
+	background-size: cover ;
+}
+.er, img{
+	margin-top: 38px;
+	margin-left: 0;
+}
+
+.g{
+	width: 200px;
+}
+.container{ /* Membuat kotak utama ditengah halaman web*/
+	margin: auto;
+	width: 960px;
+	background-color: #c7ffed ;
+background:rgba(217,251,255,0.9);
+position: relative;
+z-index: 3;
+
+}
+text{
+		opacity:0;
+}
+.header {  /*Membuat kepala/ nama web*/
+	padding: 20px;
+}
+.header .judul { /* membuat judul dari web yng dibikin*/
+	font-size: 40px;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin-top: 45px;
+	color: brown;
+
+}												
+.facebook{
+	width: 940px;
+	height: 127px;
+	background-color: lightgreen;
+	margin-top: -47px;
+	margin-left: -20px;
+	text-align: left ; 
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.w{/* membuat tulisan di dalam twibon*/
+position: absolute;
+right: 5px;
+top:31px;
+	transform: rotate(45deg);
+	text-decoration: bold;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px 5px;
+	color: blue;
+	
+}
+/* membuat twibon d pojok kanan atas*/
+.i{
+	float: right;
+	margin-top: -20px;
+}
+.b { /* membuat tulisan di dalam twibon*/
+
+	text-align: center;
+	position: absolute;
+	padding: 5px 5px;
+	background-color: skyblue;
+	color: white;
+	transform: rotate(90deg);
+	right: 250px;
+	bottom: -425px;
+    font-family: cursive;
+  
+}
+.facebook h1{
+	line-height: 120px;
+}
+ .facebook .b a{
+ 	text-decoration: none;
+ }
+.header ul li{ /* Membuat menu2 yang ingin ditampilkan  */
+	display: inline-block;
+	margin-top: -20px;
+}
+.header a{
+	text-decoration: none;
+	color :green;
+	
+
+}
+.header a:hover { /* Membuat supaya ketika cursor mengarah maka ada efek timbul pada menu yang dipilih */
+	background-color: lightskyblue;
+	color: white;
+	padding: 5px;
+}
+.header ul{
+	
+}
+.hero { /*membuat gambar utama dari website */ 
+	
+	height: 353px;
+	width: 960px;
+	margin: auto;
+	background-size: cover;
+	background-position: 0 0px;
+margin-top: -230px;
+}
+.main  {/*Membuat isi dari laman web yang dibikin */ 
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+}
+.main h2{
+	font-size: 35px
+	font-weight:bold;
+}
+.main .penulis{
+	font-size: 11px;
+	margin-top: -19px;
+}
+.main p{
+	margin-bottom: 20px;
+	font-size: 15px;
+	text-align: justify;
+}
+.main .penulis a {
+	color: green;
+	text-decoration: none;
+}
+.footer{ /*Membuat catatan kaki / hak cipta */
+	background-color: black;
+	text-align: center;
+	font-size: 12px;
+	padding: 5px;
+}
+.footer p{
+	color: white;
+
+}
+
+.a{
+	font-size: 40px;
+	font-weight: bold;
+	
+}
+/*s{ /*Membuat supaya web dapat discrol ke atas dan bawah 
+	overflow: scroll;
+	height: 700px; */
+}
+.t{/* membuat text wrapping agar menggelilingi gambar*/
+	float: right ;
+	font-size: 11px;
+
+	background-color: yellow;
+letter-spacing: 1px;
+}
+
+.sidebar{ /*membuat kotak di sebelah kanan conten dengan menggunakan float*/
+	width: 360px;
+	margin: auto;
+	padding-right: 20px;
+	float: right;
+	text-align: justify;
+	box-sizing: border-box;
+}
+.sidebar  h3{
+	font-weight: bold;
+	
+	
+}
+.sidebar img{ /* membuat gambar didalam kotak sebelah kanan dan supaya bisa membuat text wrapping */
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+	margin-top: -0px;
+
+
+}
+.sidebar p{
+	font: 12px/18px arial ;
+
+}
+/* teknik clear fix supaya float yang dibikin di sidebar tidak collaps*/
+.cf:before,
+.cf:after{
+	content: " "; /* 1*/
+	display: table; /* 2*/
+}	
+.cf:after{
+	clear: both;
+}
+.cf {
+	*zoom:1;
+}
+img{
+	float: left;
+}
+.sidebar2 { /* membuat kotak ke2 di bawah sidebar dan di sebelah kana conten*/
+	width: 300px;
+	float: right;
+	padding: 20px;
+	font-family: monospace;
+	text-align: center;
+	color: grey;
+	font-weight: unset;
+
+	
+}
+/* membuat searching box di bar menu website*/
+.g{
+	height: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+/*.tbox, .btn{
+	border: none;
+	outline: none;
+}
+.tbox{
+	width: 0;
+	transition: 0.3s;
+	background-color: skyblue;
+	color: black;
+}
+
+.g:hover > .tbox,.tbox:focus{
+	width: 220px;
+	padding:0 0px;
+}
+.btn{
+	background: green;
+	color: white;
+	padding: 0 5px;
+	text-transform: uppercase;
+	cursor: pointer;*/
+	
+	
+
+}
+.i, .w {
+	opacity: .0;
+}
+
+.g{
+margin-right: -103px;
+	float: right;
+}
+.laen ul  { /* membuat kotak d bar menu*/
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+	padding-top: 5px;
+margin-top: -0px;
+	margin-left: -26px;
+}	
+.laen a{
+	background-color: green;
+padding: 5px 5px;
+color: white;
+border-radius: 5px;
+margin-left:10px ;
+}
+.laen li{
+margin-left: -2px;
+}
+	
+.laen{
+	width: 960px;
+	height:30px;
+margin: auto;
+	background-color: lightgreen;
+margin-left: -20px;
+margin-top: -65px;
+
+
+}
+.fix{/* membuar agar header, search box dan menu bar agar bisa teetap pada posisinya walaupun d scroll k bawah dan keatas  dan dimensinya maju beberapa dimensi*/
+	position: fixed;
+	z-index: 9999;
+	top: 0px;
+}
+.isi{ /* membuat agat conten, sidebar, footer, dan side bar2 agar dapar d scroll keatas dan kebawah*/ 
+	margin-top: 123px;
+}
+
+.sidebar3{ /*membuat kotak di sebelah kanan conten dengan menggunakan float*/
+	width: 360px;
+	margin: auto;
+	padding-right: 20px;
+	float: right;
+	bottom: 0;
+	right: 0;
+	text-align: left;
+	box-sizing: border-box;
+
+}
+ .sidebar3 ul{
+        margin:0;padding:0; /*setting margin dan padding jadi 0*/
+        list-style:none; /*menghilangkan tanda list-type ul*/
+        float:left; /*float ke kiri, dirapatkan ke kiri*/
+        width:330px; /*setting lebar 200 pixel*/
+       /*set background biru*/
+        padding-bottom:20px; /*padding bagian bawah 20 pixel*/
+    }
+    .sidebar3 li{
+        width:100%; /*setting width untuk li ,100% sehingga otomatis
+sesuai panjang ul*/
+        margin:0;padding:0; /*margin dan padding 0*/
+        list-style:none; /*menghilangkan tanda list-type li*/
+    }
+    .sidebar3 h3{
+        margin:10px 0 4px 0; /*setting margin, atas=10px; kanan=0;
+bawah=4px; kiri=0;*/
+        padding:0 12px; /*setting padding atas dan bawah = 0;  dan
+kanan ,kiri = 12px;*/
+        color:maroon; /*setting warna font putih*/
+        font-size:20px; /*ukuran font 14px*/
+    }
+    .sidebar3 a{
+        display:block; /*display block artinya membuat panjang dan
+lebar menjadi satu block; */
+        padding:3px 10px; /*setting padding atas,bawah=3px; kanan,kiri=10px;*/
+        text-decoration:none; /*setting text decoration dari link =none;
+(menghilangkan garis bawah pada link)*/
+        color:brown; /*setting warna font link */
+        border-bottom:1px dotted #f2f2f2; /*setting border bawah sebuah link;*/
+    }
+    .sidebar3 a:hover{
+        background:#0099FF; /*setting backgorund warna saat link di hover
+(dilewati mouse) menjadi biru muda*/
+    }
+/* .facebook{
+	position: fixed;
+	
+	right: 0;
+	left: 0;
+	
+	
+
+
+
