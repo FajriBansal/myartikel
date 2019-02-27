@@ -16,7 +16,7 @@ body { /* mengatur gambar latar belakang*/
 }
 .container{ /* Membuat kotak utama ditengah halaman web*/
 	margin: auto;
-	width: 960px;
+	max-width: 960px;
 	background-color: #c7ffed ;
 background:rgba(217,251,255,0.9);
 position: relative;
@@ -40,7 +40,7 @@ text{
 .facebook{
 	width: 940px;
 	height: 127px;
-	background-color: lightgreen;
+	background-color: #77bc37;
 	margin-top: -47px;
 	margin-left: -20px;
 	text-align: left ; 
@@ -338,6 +338,78 @@ lebar menjadi satu block; */
         background:#0099FF; /*setting backgorund warna saat link di hover
 (dilewati mouse) menjadi biru muda*/
     }
+    .con{
+ 	width: 360px;
+	margin: auto;
+	padding-right: 20px;
+	
+
+	text-align: justify;
+	box-sizing: border-box;
+  }
+ .con ul {
+  display: flex;
+ 
+  transform: translate(-50%,-50%);
+}
+.con ul li {
+  list-style: none;
+}
+.con ul li a {
+  width: 29px;
+  height: 29px;
+  background: #fff;
+  text-align: center;
+  line-height: 29px;
+  font-size: 20px;
+  margin: 0 5px;
+  display: block;
+ 
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+.con ul li a .fa {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+.con ul li a:hover .fa {
+  color: #fff;
+  transform: rotate(360deg);
+}
+.con ul li a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+.con ul li a:hover:before{
+  top: 0;
+}
+.con ul li:nth-child(1) a:before{
+  background: #5b5999;
+}
+.con ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+.con ul li:nth-child(3) a:before{
+  background: #dd4b39;
+}
+.con ul li:nth-child(4) a:before{
+  background: #0077b5;
+}
+.con ul li:nth-child(5) a:before{
+  background: #e4405f;
+}
 /* .facebook{
 	position: fixed;
 	
